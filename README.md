@@ -1,15 +1,7 @@
-# advent-of-code-2022
+# OOPin' Through Christmas
 
-To install dependencies:
+An object-oriented, test-driven, domain-centric approach to Advent of Code.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v[5:0]u8@10511dc56. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+See the associated
+[post](https://lukegeneva.dev/blog/oopin-through-christmas.html) on my blog for
+more information.
