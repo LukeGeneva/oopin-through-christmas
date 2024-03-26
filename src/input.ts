@@ -3,7 +3,7 @@ import path from 'path';
 
 export function getInputForDay(day: number) {
   return fs
-    .readFileSync(path.join(import.meta.dir, `day${day}/day${day}.input.txt`))
+    .readFileSync(path.join(import.meta.dir, `../input/day${day}.txt`))
     .toString()
     .trim();
 }
