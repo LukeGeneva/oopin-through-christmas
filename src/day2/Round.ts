@@ -1,3 +1,4 @@
+import { Result } from './Result';
 import { Shape } from './Shape';
 
 const shapeScores = {
@@ -5,12 +6,6 @@ const shapeScores = {
   [Shape.Paper]: 2,
   [Shape.Scissors]: 3,
 };
-
-enum Result {
-  Win,
-  Loss,
-  Draw,
-}
 
 const resultScores = {
   [Result.Win]: 6,
