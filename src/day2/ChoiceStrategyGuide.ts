@@ -1,7 +1,7 @@
 import { Round } from './Round';
 import { Shape } from './Shape';
 
-export class StrategyGuide {
+export class ChoiceStrategyGuide {
   public rounds: Array<Round>;
   private _totalScore: number = 0;
 
@@ -14,7 +14,7 @@ export class StrategyGuide {
   }
 
   static fromText = (text: string) => {
-    const guide = new StrategyGuide();
+    const guide = new ChoiceStrategyGuide();
     const lines = text.split('\n');
     for (let line of lines) {
       const [opponent, you] = line.split(' ');

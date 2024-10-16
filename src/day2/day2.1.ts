@@ -1,10 +1,6 @@
 import { getInputForDay } from '../input';
-import { StrategyGuide } from './StrategyGuide';
+import { ChoiceStrategyGuide } from './ChoiceStrategyGuide';
 
 const input = getInputForDay(2);
-const guide = StrategyGuide.fromText(input);
-const totalScore = guide.rounds.reduce(
-  (total, round) => total + round.points,
-  0
-);
-console.log(totalScore);
+const guide = ChoiceStrategyGuide.fromText(input);
+console.log(guide.totalScore);

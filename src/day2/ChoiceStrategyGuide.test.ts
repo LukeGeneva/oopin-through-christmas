@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import { StrategyGuide } from './StrategyGuide';
+import { ChoiceStrategyGuide } from './ChoiceStrategyGuide';
 
 // rock paper
 // paper rock
@@ -10,7 +10,7 @@ B X
 C Z`;
 
 test('that strategy guide is parsed', () => {
-  const guide = StrategyGuide.fromText(TEXT);
+  const guide = ChoiceStrategyGuide.fromText(TEXT);
   expect(guide.rounds.length).toBe(3);
   expect(guide.rounds[0].points).toBe(8);
   expect(guide.rounds[1].points).toBe(1);
@@ -18,6 +18,6 @@ test('that strategy guide is parsed', () => {
 });
 
 test('that points are totaled', () => {
-  const guide = StrategyGuide.fromText(TEXT);
+  const guide = ChoiceStrategyGuide.fromText(TEXT);
   expect(guide.totalScore).toBe(15);
 });
