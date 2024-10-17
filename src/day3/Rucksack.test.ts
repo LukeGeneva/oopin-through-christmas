@@ -10,5 +10,6 @@ test('that compartments are filled', () => {
 test('that common item is returned', () => {
   const sack = Rucksack.fromText('vJrwpWtwJgWrhcsFMMfFFhFp');
   const item = sack.getCommonItem();
-  expect(item).toEqual({ type: 'p', priority: 16 });
+  expect(item.type).toBe('p');
+  expect(item.priority).toBe(16);
 });
