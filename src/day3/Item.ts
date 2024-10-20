@@ -14,6 +14,10 @@ export class Item {
     this._type = type;
     this._priority = getPriority(type);
   }
+
+  equals = (other: Item) => {
+    return this.type === other.type;
+  };
 }
 
 function getPriority(char: string) {
